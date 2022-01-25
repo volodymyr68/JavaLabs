@@ -1,28 +1,26 @@
 package com.company.lab1;
 
 public class Hour {
-    public int numofbuyers;
-    public int counter;
-    public String comment;
 
-    public Hour(int numofbuyers, int counter, String comment) {
-        super();
-        this.numofbuyers = numofbuyers;
+    private int numOfBuyers;
+    private int counter;
+    private String comment;
+
+    public Hour(int numOfBuyers, int counter, String comment) {
+        this.numOfBuyers = numOfBuyers;
         this.comment = comment;
         this.counter = counter;
     }
 
     public Hour() {
     }
-    // hour arr[]= new hour[5];
 
-
-    public int getNumofbuyers() {
-        return numofbuyers;
+    public int getNumOfBuyers() {
+        return numOfBuyers;
     }
 
-    public void setNumofbuyers(int numofbuyers) {
-        this.numofbuyers = numofbuyers;
+    public void setNumOfBuyers(int numOfBuyers) {
+        this.numOfBuyers = numOfBuyers;
     }
 
     public int getCounter() {
@@ -35,7 +33,7 @@ public class Hour {
 
     @Override
     public String toString() {
-        return "";
+        return "Num of buyers : " + numOfBuyers + " ,Hour : " + counter + " , Comment : " + comment;
     }
 
     public String getComment() {
@@ -45,6 +43,5 @@ public class Hour {
     public void setComment(String comment) {
         this.comment = comment;
     }
-
 
 }
