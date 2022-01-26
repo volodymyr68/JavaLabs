@@ -1,11 +1,11 @@
 package com.company.lab1;
 
-public class StoreDescriptor   {
+public class StoreDescriptor {
 
-    public void output(Store store){
-        System.out.println("Total count of buyers : "+ store.getBuyers());
-        System.out.println("Hour with smallest quantity of buyers : "+ store.getArr()[0].getCounter() + " : 00");
-        System.out.println("Buyers comment : " + store.getArr()[0].getComment());
+    public void output(store store, StoreOperations operations) {
+        System.out.println("Total count of buyers : " + operations.getBuyersSum());
+        System.out.println("Hour with smallest quantity of buyers : " + operations.findSmallestHour(store) + " : 00");
+        System.out.println("Buyers comment : " + operations.findComment(store));
     }
 
 }

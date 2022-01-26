@@ -1,18 +1,18 @@
 package com.company.lab1;
 
-public class Store {
+public class store {
 
-    private hour[] arr = new hour[3];
+    private Hour[] hours = new Hour[3];
     private int buyers;
     private String name;
     private String address;
 
-    public hour[] getArr() {
-        return arr;
+    public Hour[] getHours() {
+        return hours;
     }
 
-    public void setArr(hour[] arr) {
-        this.arr = arr;
+    public void setHours(Hour[] hours) {
+        this.hours = hours;
     }
 
     public int getBuyers() {
@@ -23,14 +23,10 @@ public class Store {
         this.buyers = buyers;
     }
 
-    public Store() {
+    public store() {
     }
 
-
-
-
-
-    public Store(String name, String address) {
+    public store(String name, String address) {
         this.name = name;
         this.address = address;
     }

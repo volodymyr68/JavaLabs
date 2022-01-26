@@ -3,7 +3,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Store Store =new Store("ATB","Pushka");
+        store Store =new store("ATB","Pushka");
 
         StoreOperations operations = new StoreOperations();
         System.out.println(Store.getName());
@@ -13,7 +13,7 @@ public class Main {
         operations.findSmallestHour(Store);
 
         StoreDescriptor store1 = new StoreDescriptor();
-        store1.output(Store);
+        store1.output(Store, operations);
 
 
     }
