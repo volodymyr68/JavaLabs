@@ -1,16 +1,17 @@
 package com.company.lab1;
 
 public class Store {
-    private Hour[] arr = new Hour[3];
+
+    private hour[] arr = new hour[3];
     private int buyers;
     private String name;
     private String address;
 
-    public Hour[] getArr() {
+    public hour[] getArr() {
         return arr;
     }
 
-    public void setArr(Hour[] arr) {
+    public void setArr(hour[] arr) {
         this.arr = arr;
     }
 

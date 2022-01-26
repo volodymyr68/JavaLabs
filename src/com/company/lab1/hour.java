@@ -1,17 +1,17 @@
 package com.company.lab1;
 
-public class Hour {
+public class hour {
     private int numOfBuyers;
     private int counter;
     private String comment;
 
-    public Hour(int numOfBuyers, int counter, String comment) {
+    public hour(int numOfBuyers, int counter, String comment) {
         this.numOfBuyers = numOfBuyers;
         this.comment = comment;
         this.counter = counter;
     }
 
-    public Hour() {
+    public hour() {
     }
 
 
