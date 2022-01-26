@@ -1,7 +1,6 @@
 package com.company.lab1;
 
 public class Hour {
-
     private int numOfBuyers;
     private int counter;
     private String comment;
@@ -14,6 +13,7 @@ public class Hour {
 
     public Hour() {
     }
+
 
     public int getNumOfBuyers() {
         return numOfBuyers;
@@ -33,7 +33,7 @@ public class Hour {
 
     @Override
     public String toString() {
-        return "Num of buyers : " + numOfBuyers + " ,Hour : " + counter + " , Comment : " + comment;
+        return "Num of buyers : " + numOfBuyers + " ,Hour : " + counter +":00 " +" , Comment : " + comment;
     }
 
     public String getComment() {
