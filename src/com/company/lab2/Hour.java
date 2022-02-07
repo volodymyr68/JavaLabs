@@ -1,12 +1,9 @@
 package com.company.lab2;
 
-import java.util.Comparator;
-
-public class Hour extends AbstractHours implements Comparator<Hour> {
+public class Hour extends AbstractHours  {
         public int numOfBuyers;
         public int counter;
         public String comment;
-
 
     public Hour(int numOfBuyers, int counter, String comment) {
         this.numOfBuyers = numOfBuyers;
@@ -40,20 +37,9 @@ public class Hour extends AbstractHours implements Comparator<Hour> {
         return comment;
     }
 
-//    @Override
-//    public static String getComment() {
-//        return comment;
-//    }
-
-
     @Override
     public void setComment(String comment) {
         this.comment=comment;
     }
 
-
-    @Override
-    public int compare(Hour o1, Hour o2) {
-        return this.getCounter()-getCounter();
-    }
 }

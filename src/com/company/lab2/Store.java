@@ -1,7 +1,4 @@
 package com.company.lab2;
-
-import java.util.Comparator;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class Store extends AbstractStore  {
@@ -9,14 +6,13 @@ public class Store extends AbstractStore  {
     private String address;
     private String name;
     private int buyers;
-    private Hour [] hours = new Hour[3] ;
+    private  Hour [] hours = new Hour[3] ;
     private int buyersSum =0;
 
     public Store(String address, String name) {
         this.address = address;
         this.name = name;
     }
-
 
     public int getBuyersSum() {
         return buyersSum;
@@ -35,15 +31,16 @@ public class Store extends AbstractStore  {
         }
     }
 
-//    @Override
-//    public Hour[] getHours() {
-//        return new Hour[0];
-//    }
-
     @Override
     public Hour[] getHours() {
         return hours;
     }
+
+    @Override
+    public void setHours(Hour []hours) {
+        this.hours=hours;
+    }
+
 
     @Override
     public String getAddress() {
@@ -77,4 +74,3 @@ public class Store extends AbstractStore  {
     }
 
 }
-

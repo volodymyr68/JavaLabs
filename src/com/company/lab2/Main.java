@@ -1,6 +1,5 @@
 package com.company.lab2;
 
-
 public  class Main {
     public static void main(String[] args) {
         Store Store = new Store("ATB", "Pushka");
@@ -15,8 +14,9 @@ public  class Main {
     StoreDescriptor store1 = new StoreDescriptor();
     HourOperations hourOperations=new HourOperations();
         hourOperations.sortHoursByBuyers(Store);
-        store1.output(Store, operations,hourOperations);
-        hourOperations.compare(hour,hour);
-        store1.output(Store, operations,hourOperations);
+        store1.operationsOutput(Store, operations);
+        store1.arraySortOutput(Store,hourOperations);
+        hourOperations.sortHoursByComment(Store);
+        store1.arraySortOutput(Store,hourOperations);
     }
 }

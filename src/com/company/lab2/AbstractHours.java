@@ -2,31 +2,28 @@ package com.company.lab2;
 
 import java.util.Objects;
 
-abstract class  AbstractHours  {
-
+abstract class AbstractHours implements Comparable<AbstractHours> {
 
     public abstract int getNumOfBuyers();
 
-    public  abstract void setNumOfBuyers(int numOfBuyers);
+    public abstract void setNumOfBuyers(int numOfBuyers);
 
     public abstract int getCounter();
 
     public abstract void setCounter(int counter);
 
-
-
     public abstract String getComment();
 
-    public abstract void setComment(String comment) ;
-
+    public abstract void setComment(String comment);
 
     @Override
     public String toString() {
         return
                 "Buyers quantity : " + getNumOfBuyers() +
-                ", Hour : " + getCounter() +":00"+
-                ", Buyers comment : " + getComment()  ;
+                        ", Hour : " + getCounter() + ":00" +
+                        ", Buyers comment : " + getComment();
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -38,6 +35,11 @@ abstract class  AbstractHours  {
     @Override
     public int hashCode() {
         return Objects.hash(getComment());
+    }
+
+    @Override
+    public int compareTo(AbstractHours o) {
+        return o.getComment().compareTo(this.getComment());
     }
 
 }

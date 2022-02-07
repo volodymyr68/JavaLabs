@@ -4,18 +4,9 @@ import java.util.Objects;
 
 abstract class
 AbstractStore  {
-//    @Override
-//    public int compareTo(AbstractStore o) {
-//        Hour hour1 = o.getHours()[0];
-//        Hour[] hours = getHours();
-//        for (Hour hour:hours){
-//            hour.compareTo(hour1);
-//        }
-//        return  ;
-//    }
-
 
     public abstract Hour[] getHours() ;
+    public abstract void setHours(Hour []hours);
 
     public abstract String getAddress();
 
@@ -49,6 +40,5 @@ AbstractStore  {
     public int hashCode() {
         return Objects.hash(getBuyers());
     }
-
 
 }

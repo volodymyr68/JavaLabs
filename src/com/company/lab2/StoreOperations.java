@@ -39,6 +39,4 @@ public class StoreOperations {
                 .get();
         return hour.getComment();
     }
-
-
 }
