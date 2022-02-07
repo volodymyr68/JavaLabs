@@ -1,13 +1,14 @@
 package com.company.lab2;
 
 public class Hour extends AbstractHours  {
-        public int numOfBuyers;
-        public int counter;
-        public String comment;
+
+    public int numOfBuyers;
+    public int workHours;
+    public String comment;
 
     public Hour(int numOfBuyers, int counter, String comment) {
         this.numOfBuyers = numOfBuyers;
-        this.counter = counter;
+        this.workHours = counter;
         this.comment = comment;
     }
     public Hour(){}
@@ -23,13 +24,13 @@ public class Hour extends AbstractHours  {
     }
 
     @Override
-    public int getCounter() {
-        return counter;
+    public int getWorkHours() {
+        return workHours;
     }
 
     @Override
-    public void setCounter(int counter) {
-        this.counter=counter;
+    public void setWorkHours(int workHours) {
+        this.workHours = workHours;
     }
 
     @Override

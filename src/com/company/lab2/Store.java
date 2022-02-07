@@ -2,10 +2,11 @@ package com.company.lab2;
 import java.util.Scanner;
 
 public class Store extends AbstractStore  {
+
     private final Scanner in = new Scanner(System.in);
     private String address;
     private String name;
-    private int buyers;
+    private int buyersCount;
     private  Hour [] hours = new Hour[3] ;
     private int buyersSum =0;
 
@@ -63,14 +64,14 @@ public class Store extends AbstractStore  {
     }
 
     @Override
-    public int getBuyers() {
-        return buyers;
+    public int getBuyersCount() {
+        return buyersCount;
     }
 
 
     @Override
-    public void setBuyers(int buyers) {
-        this.buyers=buyers;
+    public void setBuyersCount(int buyers) {
+        this.buyersCount =buyers;
     }
 
 }

@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.util.stream.Stream;
 
 public class StoreOperations {
+
     private final Scanner in = new Scanner(System.in);
     private int buyersSum =0;
     public int getBuyersSum() {
@@ -23,14 +24,14 @@ public class StoreOperations {
         for (Hour hour : store.getHours()) {
             buyersSum += hour.getNumOfBuyers();
         }
-        return buyersSum;
+        return getBuyersSum();
     }
     public int findSmallestHour(Store store) {
 
             Hour hour = Stream.of(store.getHours())
                 .min(Comparator.comparingInt(Hour::getNumOfBuyers))
                 .get();
-        return hour.getCounter();
+        return hour.getWorkHours();
     }
     public String findComment(Store store) {
 

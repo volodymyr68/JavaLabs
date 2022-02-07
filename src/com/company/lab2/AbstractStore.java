@@ -2,8 +2,7 @@ package com.company.lab2;
 
 import java.util.Objects;
 
-abstract class
-AbstractStore  {
+abstract class AbstractStore  {
 
     public abstract Hour[] getHours() ;
     public abstract void setHours(Hour []hours);
@@ -16,9 +15,9 @@ AbstractStore  {
 
     public abstract void setName(String name);
 
-    public abstract int getBuyers();
+    public abstract int getBuyersCount();
 
-    public abstract void setBuyers(int buyers);
+    public abstract void setBuyersCount(int buyers);
 
     @Override
     public String toString() {
@@ -33,12 +32,12 @@ AbstractStore  {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Store store = (Store) o;
-        return getBuyers() == store.getBuyers();
+        return getBuyersCount() == store.getBuyersCount();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getBuyers());
+        return Objects.hash(getBuyersCount());
     }
 
 }

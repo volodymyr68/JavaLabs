@@ -2,8 +2,8 @@ package com.company.lab2;
 
 public  class Main {
     public static void main(String[] args) {
-        Store Store = new Store("ATB", "Pushka");
 
+        Store Store = new Store("ATB", "Pushka");
     StoreOperations operations = new StoreOperations();
     Hour hour = new Hour();
         System.out.println(Store.getName());

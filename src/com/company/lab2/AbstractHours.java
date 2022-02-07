@@ -8,9 +8,9 @@ abstract class AbstractHours implements Comparable<AbstractHours> {
 
     public abstract void setNumOfBuyers(int numOfBuyers);
 
-    public abstract int getCounter();
+    public abstract int getWorkHours();
 
-    public abstract void setCounter(int counter);
+    public abstract void setWorkHours(int workHours);
 
     public abstract String getComment();
 
@@ -20,7 +20,7 @@ abstract class AbstractHours implements Comparable<AbstractHours> {
     public String toString() {
         return
                 "Buyers quantity : " + getNumOfBuyers() +
-                        ", Hour : " + getCounter() + ":00" +
+                        ", Hour : " + getWorkHours() + ":00" +
                         ", Buyers comment : " + getComment();
     }
 
