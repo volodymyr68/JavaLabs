@@ -7,37 +7,38 @@ import java.util.stream.Stream;
 public class StoreOperations {
 
     private final Scanner in = new Scanner(System.in);
-    private int buyersSum =0;
+    private int buyersSum = 0;
+
     public int getBuyersSum() {
         return buyersSum;
     }
-    public void fillHours(Store store) {
 
+    public void fillHours(Store store) {
         for (int i = 0; i < store.getHours().length; i++) {
             System.out.print("Enter quantity of buyers,hour,comment : ");
             store.getHours()[i] = new Hour(in.nextInt(), in.nextInt(), in.next());
             System.out.println(store.getHours()[i]);
         }
     }
-    public int calculateBuyersSum(Store store) {
 
+    public int calculateBuyersSum(Store store) {
         for (Hour hour : store.getHours()) {
             buyersSum += hour.getNumOfBuyers();
         }
         return getBuyersSum();
     }
-    public int findSmallestHour(Store store) {
 
-            Hour hour = Stream.of(store.getHours())
-                .min(Comparator.comparingInt(Hour::getNumOfBuyers))
-                .get();
-        return hour.getWorkHours();
+    public int findSmallestHourWorkHours(Store store) {
+        return findSmallestHour(store).getWorkHours();
     }
-    public String findComment(Store store) {
 
-            Hour hour = Stream.of(store.getHours())
+    public String findSmallestHourComment(Store store) {
+        return findSmallestHour(store).getComment();
+    }
+
+    public Hour findSmallestHour(Store store) {
+        return Stream.of(store.getHours())
                 .min(Comparator.comparingInt(Hour::getNumOfBuyers))
                 .get();
-        return hour.getComment();
     }
 }

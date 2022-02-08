@@ -15,8 +15,8 @@ public  class Main {
     HourOperations hourOperations=new HourOperations();
         hourOperations.sortHoursByBuyers(Store);
         store1.operationsOutput(Store, operations);
-        store1.arraySortOutput(Store,hourOperations);
+        store1.arraySortOutput(Store);
         hourOperations.sortHoursByComment(Store);
-        store1.arraySortOutput(Store,hourOperations);
+        store1.arraySortOutput(Store);
     }
 }
