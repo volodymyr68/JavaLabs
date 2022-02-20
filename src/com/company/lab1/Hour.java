@@ -1,6 +1,7 @@
 package com.company.lab1;
 
 public class Hour {
+
     private int numOfBuyers;
     private int counter;
     private String comment;
