@@ -1,6 +1,6 @@
 package com.company.lab1.task2;
 
-public class Employee extends Citizens{
+public class Employee extends Citizen {
 
     private String company;
     private String workPosition;

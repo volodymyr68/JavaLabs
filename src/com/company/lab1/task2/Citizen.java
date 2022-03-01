@@ -1,9 +1,9 @@
 package com.company.lab1.task2;
 
-public class Citizens extends Human {
+public class Citizen extends Human {
     private String citizenship;
 
-    public Citizens(String name, int age, double weight, double height,String citizenship) {
+    public Citizen(String name, int age, double weight, double height, String citizenship) {
         super(name, age, weight, height);
         this.citizenship=citizenship;
     }

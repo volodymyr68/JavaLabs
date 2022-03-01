@@ -1,22 +1,22 @@
 package com.company.lab1.task2;
 
-public class Student extends Citizens {
+public class Student extends Citizen {
 
-    private String university;
+    private String universityName;
     private String yearOfUniversity;
 
     public Student(String name, int age, double weight, double height, String citizenship, String university, String yearOfUniversity) {
         super(name, age, weight, height, citizenship);
-        this.university = university;
+        this.universityName = university;
         this.yearOfUniversity = yearOfUniversity;
     }
 
-    public String getUniversity() {
-        return university;
+    public String getUniversityName() {
+        return universityName;
     }
 
-    public void setUniversity(String university) {
-        this.university = university;
+    public void setUniversityName(String universityName) {
+        this.universityName = universityName;
     }
 
     public String getYearOfUniversity() {
@@ -34,7 +34,7 @@ public class Student extends Citizens {
                 ", age=" + age +
                 ", weight=" + weight +
                 ", height=" + height +
-                ", university='" + university + '\'' +
+                ", university='" + universityName + '\'' +
                 ", yearOfUniversity='" + yearOfUniversity + '\'' +
                 '}';
     }
