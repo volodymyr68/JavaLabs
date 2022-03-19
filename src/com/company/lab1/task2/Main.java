@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Object []arr=new Object[4];
+        Human []arr=new Human[4];
             arr[0] =new Human("Vova",17,74.5,185);
             arr[1]= new Citizen("Vova",17,74.5,185,"Ukraine");
             arr[2] = new Employee("Vova",17,74.5,185,"Ukraine","Nix Solution","junior");//
