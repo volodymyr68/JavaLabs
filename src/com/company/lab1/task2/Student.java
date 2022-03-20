@@ -3,12 +3,12 @@ package com.company.lab1.task2;
 public class Student extends Citizen {
 
     private String universityName;
-    private String yearOfUniversity;
+    private String universityGradeNumber;
 
-    public Student(String name, int age, double weight, double height, String citizenship, String university, String yearOfUniversity) {
+    public Student(String name, int age, double weight, double height, String citizenship, String university, String universityGradeNumber) {
         super(name, age, weight, height, citizenship);
         this.universityName = university;
-        this.yearOfUniversity = yearOfUniversity;
+        this.universityGradeNumber = universityGradeNumber;
     }
 
     public String getUniversityName() {
@@ -19,12 +19,12 @@ public class Student extends Citizen {
         this.universityName = universityName;
     }
 
-    public String getYearOfUniversity() {
-        return yearOfUniversity;
+    public String getUniversityGradeNumber() {
+        return universityGradeNumber;
     }
 
-    public void setYearOfUniversity(String yearOfUniversity) {
-        this.yearOfUniversity = yearOfUniversity;
+    public void setUniversityGradeNumber(String universityGradeNumber) {
+        this.universityGradeNumber = universityGradeNumber;
     }
 
     @Override
@@ -35,7 +35,7 @@ public class Student extends Citizen {
                 ", weight=" + weight +
                 ", height=" + height +
                 ", university='" + universityName + '\'' +
-                ", yearOfUniversity='" + yearOfUniversity + '\'' +
+                ", yearOfUniversity='" + universityGradeNumber + '\'' +
                 '}';
     }
 }
