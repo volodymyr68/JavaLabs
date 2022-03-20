@@ -6,6 +6,7 @@ import java.util.stream.Stream;
 
 public class StoreOperations {
 
+
     private final Scanner in = new Scanner(System.in);
     private int buyersSum =0;
 
